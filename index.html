@@ -1,57 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/4fd3577336.js" crossorigin="anonymous"></script>
-     <title>Document</title>
+    <title>Document</title>
+    <script defer src="MAIN.JS"></script>
 </head>
+
 <body>
-    <section>
+    <div class="wrapper">
         <nav>
             <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars"></i>
-           </label>
-           <label class="logo-1"><a href="#">Follow Me</a></label>
-            <label class="logo-2">TONY</label> 
-            <ul>
-                <label class="nav-logo"><a href="#">Follow Me</a></label>
-                <li><a class="active" href="">Home</a></li>
+            <label for="check" >
+                <svg class="checkbtn" height="30px" width="30px">
+                    <use href="#menu"/>
+                </svg>
+            </label>
+            <div class="logo">TONY</div>
+            <ul class="links">
+                <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#">contact</a></li>
                 <li><a href="#">Articles</a></li>
             </ul>
-           </nav>
+        </nav>
+
+        <section class="section-1">
+            <div class="section-content">
+                <span class="line">
+                    <span class="line">Hello I'm</span>
+                </span>
+             <br>
+            <h1 class="title">Anthony Justice</h1>
+            <p class="title-alt">A frontend web developer from Nigeria, with a passion for exceptional design</p>
+            <p class="title-sub">I specialize in creating amazing websites</p>
+        </div>
+        <div>
+            <img src="jay.jpg" alt="" class="hero-img" >
+        </div>
+        <div class="project">
+            <p>Recent projects..</p>
+        </div>   
+    </section> 
+        
+    
+       
+          
            
-           <section class="section-1">
-            <div class="container-1">
-               <p class="p1">Hello I'm </p> 
-               <h1>Anthony <br> Justice</h1>
-              <p class="p2">
-               Frontend Web Developer from Nigeria.. 
-              </p>
-               
-                
-               <hr class="p2-hr">
-               <h3> I build aweasome <span>Websites</span></h3> 
-            </div>
-
-            <div class="container-2">
-                <img class="container-2-img" src="jay.jpg" alt="">
-            </div>
-
-            <div class="container-3">
-                <p>Recent projects <span><hr></span></p>
-            </div>
-           </section>
-
-
-    </section>
+          
+        
+          
  
-  
+       
 
+
+
+
+
+
+    </div>   
 </body>
+<svg style="display: none">
+    <symbol id="menu" viewBox="0 0 24 24" >
+        <path d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z"
+            fill-rule="nonzero" />
+    </symbol>
+</svg>
+
 </html>
