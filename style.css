@@ -5,30 +5,42 @@
     list-style: none;
     text-decoration: none;
 }
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 4em;
+}
 body {
     width: 100%;
     font-family: sans-serif;
     padding: 2em 3em;
     background: lightcoral;
-
+    scroll-behavior: smooth;
+    scroll-behavior: auto;
 }
 .wrapper {
     width: 100%;
     background: #F2EDD7FF;
     padding: 0 1em;
 }
-nav {
-    height: 80px;
+.header {
+    width: 100%;
+    height: 60px;
+    background: #F2EDD7FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em 3em;
 }
+
 .logo  {
     font-size: 20px;
     line-height: 80px;
     float: left;
     padding: 0 ;
+    margin-left: 1em;
 }
 nav ul {
     line-height: 80px;
-    float: right;
 }
 nav ul li {
     display: inline-block;
@@ -47,7 +59,8 @@ nav ul li a:hover {
 #check {
     display: none;
 }
-.checkbtn {
+label #checkbtn,
+label #checkbtn-close {
     float: right;
     margin-right: 10px;
     margin-top: 20px;
@@ -55,17 +68,18 @@ nav ul li a:hover {
     display: none;
 }
 
-.section-1 {
+#Home {
     width: 100%;
     background: #F2EDD7FF;
     padding: 3em 3em 1em;
+    margin-bottom: 3em;
     display: flex;
     justify-content: space-between;
     line-height: 1.5em;
 }
 .section-content {
     width: 100%;
-    max-width: 11em;
+    max-width: 12em;
 }
 .line {
     position: relative;
@@ -73,26 +87,78 @@ nav ul li a:hover {
     width: 100%;
     margin-left: 1em 0;
 }
-
-
-
 .title{
     max-width: 3em;
     margin: 4vh 0;
+    font-size: 26px;
+    line-height: 1.5em;
 }
-.title-alt{
-    
+.title-alt {
+    font-size: 17px;
 }
-
 .title-sub {
     max-width: 10em;
     margin-top: 3em;
     padding-top: 9px;
     border-top: 1px solid rgb(141, 136, 136); 
 }
-
 .hero-img {
     height: 20rem;
+}
+#Articles {
+    padding: 3em 3em 1em;
+}
+#Articles h1 {
+    font-size: 43px;
+    max-width: 3.8em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid rgb(228, 202, 186);
+}
+.articles-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.articles-list div {
+    background: rgb(228, 202, 186);
+    padding: 6em;
+    margin: 4vh;
+    box-shadow: rgb(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.articles-list div:hover {
+    padding: 8.5em;
+}
+.articles-list div p {
+    color: gray;
+    text-align: right;
+}
+#About-section {
+    padding: 5em 3em 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.About-content h1 {
+    font-size: 35px;
+    margin-bottom: .9em;
+}
+.About-content p {
+    max-width: 27em;
+    line-height: 1.5em;
+    font-size: 17px;
+}
+.social-links {
+    margin-right: 10em;
+}
+.social-links a {
+    color: #000;
+} 
+.twitter {
+    border-bottom: 2px solid rgb(228, 202, 186);
+    padding-bottom: 7px;
+}
+.twitter, .github {
+    margin: 0 0 10px 0;
 }
 @media (max-width: 1200px) {
     body {
@@ -103,7 +169,161 @@ nav ul li a:hover {
     
     }
 }
+@media (max-width: 940px) {
+    .articles-list {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 840px) {
+    .social-links {
+        margin-right: 0;
+    }
+}
+@media (max-width: 770px) {
+    #Home {
+        width: 100%;
+        background: #F2EDD7FF;
+        padding: 3em 3em 1em;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        line-height: 1.5em;
+    }
+    .project {
+        display: none;
+    }
+    .section-content {
+        width: 100%;
+        max-width: 12.5em;
+    }
+}
+@media (max-width: 680px) {
+    #About-section {
+        padding: 5em 3em 1em;
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .About-content p {
+        max-width: 31em;
+        line-height: 1.5em;
+        font-size: 17px;
+    }
+    .About-content {
+        margin-bottom: 2em;
+    }
+    .social-links {
+        max-width: 5.8em;
+    }
+}
 
+@media (max-width: 588px) {
+    #Home {
+        width: 100%;
+        background: #F2EDD7FF;
+        padding: 1em;
+        line-height: 1.5em;
+        padding-top: 4em;
+    }
+    .hero-img {
+        margin-right: 1.5em;
+    }
+    .section-content {
+        margin-left: .7em;
+        max-width: 12em;
+    }
+    .follow-me {
+        display: none;
+    }
+}
+@media (max-width: 599px) {
+    body {
+        font-family: sans-serif;
+        padding: 0;
+        background:#F2EDD7FF;
+    }
+    .wrapper {
+        background-color: none;
+        padding: 0 1em;
+    }
+    .header {
+        background: #F2EDD7FF;
+        position: fixed;
+        top: 0;
+        padding: 1em 0em;
+        margin-bottom: 2em;
+        z-index: 999;
+        box-shadow: rgb(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+    .follow-me {
+        display: none;
+    }
+    nav {
+        height: 60px;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+   label #checkbtn {
+    float: right;
+    margin-right: 1em;
+    margin-top: 15px;
+    line-height: 80px;
+    display: block;
+}
+.logo  {
+    font-size: 17px;
+    line-height: 60px;
+    float: left;
+    margin-left: 1em;
+}
+   nav ul {
+    position: fixed;
+    width: 100%;
+    height: 75vh;
+    background:  #755139FF;
+    top: 60px;
+    right: -100%;
+    text-align: left;
+    transition: all .5s;
+    z-index: 2;
+}
+nav ul li {
+    display: block;
+    margin-left: 20px;
+}
+nav ul li a {
+    color: #fff;
+}
+nav ul li a:hover {
+    padding: 5px;
+    background: #F2EDD7FF;
+    color: #000;
+    border-radius: 5px;
+    transition: all .5s;
+}
+#check:checked ~  ul {
+    right: -70%;
+}
+#check:checked ~ label #checkbtn {
+    display: none;
+}
+#check:checked ~ label #checkbtn-close {
+    display: block;
+}
+
+ 
+#Home { 
+    margin-top: 6em;
+    padding: 1em;  
+}
+#Articles {
+    padding: 1em;
+}
+#About-section {
+    padding: 1em;
+}
+
+}
 
 /* mobile screen size */
 @media (max-width: 500px) {
@@ -114,15 +334,28 @@ nav ul li a:hover {
     }
     .wrapper {
         background-color: none;
+        padding: 0 1em;
+    }
+    .header {
+        background: #F2EDD7FF;
+        position: fixed;
+        top: 0;
+        padding: 1em 0em;
+        margin-bottom: 2em;
+        z-index: 999;
+        box-shadow: rgb(0, 0, 0, 0.1) 0px 4px 12px;
+    }
+    .follow-me {
+        display: none;
     }
     nav {
         height: 60px;
         width: 100%;
         margin-bottom: 1em;
     }
-   .checkbtn {
+   label #checkbtn {
     float: right;
-    margin-right: 0;
+    margin-right: 1em;
     margin-top: 15px;
     line-height: 80px;
     display: block;
@@ -131,7 +364,7 @@ nav ul li a:hover {
     font-size: 17px;
     line-height: 60px;
     float: left;
-    padding: 0;
+    margin-left: 1em;
 }
    nav ul {
     position: fixed;
@@ -139,38 +372,52 @@ nav ul li a:hover {
     height: 75vh;
     background:  #755139FF;
     top: 60px;
-    left: -100%;
-    text-align: center;
+    right: -100%;
+    text-align: left;
     transition: all .5s;
     z-index: 2;
 }
 nav ul li {
     display: block;
-    margin:  0;
+    margin-left: 20px;
 }
 nav ul li a {
     color: #fff;
 }
+nav ul li a:hover {
+    padding: 5px;
+    background: #F2EDD7FF;
+    color: #000;
+    border-radius: 5px;
+    transition: all .5s;
+}
 #check:checked ~  ul {
-    left: 0;
+    right: -70%;
+}
+#check:checked ~ label #checkbtn {
+    display: none;
+}
+#check:checked ~ label #checkbtn-close {
+    display: block;
 }
 
-
-.section-1 {
+#Home {
     background: #F2EDD7FF;
     width: 100%;
-    padding: .5em 0 5px 0;
-    display: block;    
+    padding: 1em;
+    display: block; 
+    margin-top: 4em;
+    margin-bottom: 5em;   
 }
 .section-content {
     text-align: center;
     max-width: none;
+    margin-left: 0;
 }
 .line {
     text-align: left;
     margin-bottom: 5px;
 }
-
 
 .section-content .line{
     padding-left: 20px;
@@ -189,11 +436,46 @@ nav ul li a {
 .project {
     display: none;
 }
-
-
-
 .hero-img{
     display: none;
 }
 
+#Articles {
+    padding: 1em;
+}
+#Articles h1 {
+    font-size: 40px;
+    max-width: 3.8em;
+    border-bottom: 3px solid rgb(228, 202, 186);
+}
+.articles-list {
+    display: block;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.articles-list div {
+    background: rgb(228, 202, 186);
+    padding: 6em;
+    box-shadow: rgb(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.articles-list div:hover {
+    padding: 7em;
+}
+.articles-list div p {
+    color: gray;
+    text-align: right;
+}
+
+
+#About-section {
+    padding: 1em;
+}
+#About-section h1 {
+    font-size: 45px;
+    margin-bottom: .6em;
+}
+#About-section p {
+    line-height: 1.5em;
+    font-size: 17px;
+}
 }
