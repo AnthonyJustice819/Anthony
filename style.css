@@ -7,7 +7,7 @@
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 4em;
+  scroll-padding-top: 3.5em;
 }
 body {
   width: 100%;
@@ -70,7 +70,12 @@ label #checkbtn-close {
   line-height: 80px;
   display: none;
 }
-
+.follow {
+  font-size: 18px;
+  color: #1b2d45;
+  border-bottom: 1px solid #1b2d45;
+  cursor: pointer;
+}
 #Home {
   width: 100%;
   background: #f2edd7ff;
@@ -94,6 +99,7 @@ label #checkbtn-close {
   margin: 4vh 0;
   font-size: 26px;
   line-height: 1.5em;
+  font-family: 'Fredoka One', cursive;
 }
 .title-alt {
   font-size: 17px;
@@ -117,6 +123,7 @@ label #checkbtn-close {
   margin-bottom: 1em;
   padding-bottom: 0.5em;
   border-bottom: 2px solid #1b2d45;
+  font-family: 'Fredoka One', cursive;
 }
 .article-card-list {
   display: flex;
@@ -176,16 +183,46 @@ label #checkbtn-close {
 }
 .contact-wrapper {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   flex-direction: row;
   box-shadow: rgb(0, 0, 0, 0.3) 0px 4px 12px;
   padding: 3em;
   border-radius: 16px;
 }
+.contact-content h1 {
+  margin-bottom: 1em;
+  font-size: 35px;
+}
+.contact-content p {
+  max-width: 24.5em;
+  line-height: 1.5rem;
+  font-size: 17px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.input-grp {
+  display: flex;
+}
+.input-grp input {
+  height: 6vh;
+  width: 60%;
+  margin: 0px 8px 8px 0px;
+  border: none;
+  outline: 2px solid rgb(228, 202, 186);
+}
+.message-grp textarea {
+  width: 98%;
+  height: 18em;
+  border: none;
+  outline: 2px solid rgb(228, 202, 186);
+}
 
 .footer {
   background: rgb(228, 202, 186);
-  padding-top: 1em;
+  padding-top: .5em;
   padding-left: 3em;
   padding-right: 3em;
 }
@@ -194,7 +231,8 @@ label #checkbtn-close {
   flex-wrap: wrap;
   margin-top: 2em;
 }
-.footer-content > .footer-copy, .footer-nav {
+.footer-content > .footer-copy,
+.footer-nav {
   flex: 1;
 }
 .footer-copy {
@@ -228,9 +266,29 @@ label #checkbtn-close {
     background: lightcoral;
   }
 }
+@media (max-width: 1070px) {
+  .contact-content p {
+    max-width: 25em;
+  }
+}
+@media (max-width: 990px) {
+  .contact-content p {
+    max-width: 20em;
+  }
+}
 @media (max-width: 940px) {
   .articles-list {
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 900px) {
+  .contact-content p {
+    max-width: 18em;
+  }
+}
+@media (max-width: 870px) {
+  .contact-wrapper {
+    padding: 3em 0.5em;
   }
 }
 @media (max-width: 840px) {
@@ -239,6 +297,17 @@ label #checkbtn-close {
   }
   .footer-copy p {
     max-width: 15em;
+  }
+}
+@media (max-width: 810px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+  .contact-content {
+    margin-bottom: 2em;
+  }
+  .input-grp {
+    margin-bottom: 0.5em;
   }
 }
 @media (max-width: 770px) {
@@ -423,7 +492,7 @@ label #checkbtn-close {
     width: 100%;
     margin-bottom: 1em;
   }
-  label #checkbtn {
+  label #checkbtn, label #checkbtn-close {
     float: right;
     margin-right: 1em;
     margin-top: 15px;
@@ -450,16 +519,6 @@ label #checkbtn-close {
   nav .header-link li {
     display: block;
     margin-left: 20px;
-  }
-  nav .header-link li a {
-    color: #fff;
-  }
-  nav .header-link li a:hover {
-    padding: 5px;
-    background: #f2edd7ff;
-    color: #000;
-    border-radius: 5px;
-    transition: all 0.5s;
   }
   .follow {
     display: none;
@@ -535,7 +594,6 @@ label #checkbtn-close {
     color: gray;
     text-align: right;
   }
-
   #About-section {
     padding: 1em;
   }
@@ -547,9 +605,35 @@ label #checkbtn-close {
     line-height: 1.5em;
     font-size: 17px;
   }
+  #contact {
+    padding: 1em;
+    margin-bottom: 2em;
+  }
+  .contact-wrapper {
+    box-shadow: none;
+    border-radius: 16px;
+  }
+  .contact-content {
+    margin-bottom: 2em;
+  }
+  .contact-content p {
+    text-align: left;
+  }
+  .input-grp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0.5em;
+  }
+  .input-grp input {
+    height: 6vh;
+    width: 80%;
+    margin: 0px 8px 8px 0px;
+    border: none;
+    outline: 2px solid rgb(228, 202, 186);
+  }
   .footer {
     background: rgb(228, 202, 186);
-    padding-top: 1em;
     padding-left: 1em;
     padding-right: 1em;
   }
