@@ -110,7 +110,7 @@ label #checkbtn, label #checkbtn-close {
   border-top: 1px solid rgb(141, 136, 136);
 }
 .hero-img {
-  height: 20rem;
+  height: 18rem;
 }
 #Articles {
   padding: 5em 3em;
@@ -198,31 +198,8 @@ label #checkbtn, label #checkbtn-close {
   line-height: 1.5rem;
   font-size: 17px;
 }
-.form-box {
- display: block;
-  text-align: center;
-  width: 100%;
-}
-.form-box form {
-  text-align: center;
-}
-.form-box .input-grp {
-  display: flex;
-} 
-.form-box .input-grp input {
-  height: 6vh;
-  width: 65%;
-  margin: 0px 8px 8px 0px;
-  border: none;
-  outline: 2px solid rgb(228, 202, 186);
-}
-.form-box .message-grp textarea {
-  width: 95%;
-  height: 18em;
-  border: none;
-  outline: 2px solid rgb(228, 202, 186);
-}
-/* .form {
+
+ .form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -244,7 +221,7 @@ label #checkbtn, label #checkbtn-close {
   border: none;
   outline: 2px solid rgb(228, 202, 186);
 }
- */
+ 
 .footer {
   background: rgb(228, 202, 186);
   padding-top: .5em;
@@ -644,7 +621,7 @@ label #checkbtn, label #checkbtn-close {
   .contact-content p {
     text-align: left;
   }
-  /* .form {
+   .form {
     height: 100vh;
   }
   .input-grp {
@@ -659,7 +636,7 @@ label #checkbtn, label #checkbtn-close {
     margin: 0px 8px 8px 0px;
     border: none;
     outline: 2px solid rgb(228, 202, 186);
-  } */
+  } 
   .footer {
     background: rgb(228, 202, 186);
     padding-left: 1em;
