@@ -618,6 +618,9 @@ label #checkbtn, label #checkbtn-close {
   .contact-content p {
     text-align: left;
   }
+  .form {
+    height: 100vh;
+  }
   .input-grp {
     display: flex;
     flex-wrap: wrap;
