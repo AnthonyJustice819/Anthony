@@ -201,6 +201,8 @@ label #checkbtn, label #checkbtn-close {
 .form {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .input-grp {
   display: flex;
