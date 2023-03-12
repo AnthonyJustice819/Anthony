@@ -201,6 +201,7 @@ label #checkbtn, label #checkbtn-close {
 .form-box {
  display: block;
   text-align: center;
+  width: 100%;
 }
 .form-box form {
   text-align: center;
