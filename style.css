@@ -199,10 +199,8 @@ label #checkbtn, label #checkbtn-close {
   font-size: 17px;
 }
 .form-box {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
+ display: block;
+  text-align: center;
 }
 .form-box form {
   text-align: center;
@@ -212,13 +210,13 @@ label #checkbtn, label #checkbtn-close {
 } 
 .form-box .input-grp input {
   height: 6vh;
-  width: 60%;
+  width: 65%;
   margin: 0px 8px 8px 0px;
   border: none;
   outline: 2px solid rgb(228, 202, 186);
 }
 .form-box .message-grp textarea {
-  width: 98%;
+  width: 95%;
   height: 18em;
   border: none;
   outline: 2px solid rgb(228, 202, 186);
