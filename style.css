@@ -160,7 +160,7 @@ label #checkbtn, label #checkbtn-close {
 .About-content p {
   max-width: 27em;
   line-height: 1.5em;
-
+  font-size: 17px;
 }
 .social-links {
   margin-right: 10em;
@@ -650,6 +650,7 @@ label #checkbtn, label #checkbtn-close {
   } 
   .footer {
     background: rgb(228, 202, 186);
+    padding-top: .5em;
     padding-left: 1em;
     padding-right: 1em;
   }
