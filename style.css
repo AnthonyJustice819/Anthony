@@ -62,8 +62,7 @@ nav .header-link li a:hover {
 #check {
   display: none;
 }
-label #checkbtn,
-label #checkbtn-close {
+label #checkbtn {
   float: right;
   margin-right: 10px;
   margin-top: 20px;
