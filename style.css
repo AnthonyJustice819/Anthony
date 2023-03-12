@@ -34,12 +34,10 @@ body {
   padding: 1em 3em;
 }
 
-.logo {
-  font-size: 20px;
-  line-height: 80px;
-  float: left;
-  padding: 0;
-  margin-left: 1em;
+.header-logo {
+  height: 32px;
+  width: 32px;
+  padding: 0; 
 }
 
 nav .header-link {
@@ -151,6 +149,7 @@ label #checkbtn, label #checkbtn-close {
 #About-section {
   padding: 5em 3em;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -161,7 +160,7 @@ label #checkbtn, label #checkbtn-close {
 .About-content p {
   max-width: 27em;
   line-height: 1.5em;
-  font-size: 17px;
+
 }
 .social-links {
   margin-right: 10em;
@@ -170,7 +169,7 @@ label #checkbtn, label #checkbtn-close {
   color: #000;
 }
 .twitter {
-  border-bottom: 2px solid rgb(228, 202, 186);
+  border-bottom: 2px solid #1b2d45;
   padding-bottom: 7px;
 }
 .twitter,
@@ -232,6 +231,7 @@ label #checkbtn, label #checkbtn-close {
   display: flex;
   flex-wrap: wrap;
   margin-top: 2em;
+  font-size: 17px;
 }
 .footer-content > .footer-copy,
 .footer-nav {
@@ -502,10 +502,14 @@ label #checkbtn, label #checkbtn-close {
     display: block;
   }
   .logo {
-    font-size: 17px;
-    line-height: 60px;
     float: left;
     margin-left: 1em;
+      float: left;
+      padding: 0;
+      margin-left: 1em;
+      height: 32px;
+      width: 32px;
+      margin-bottom: 1.2em;
   }
   nav .header-link {
     position: fixed;
@@ -521,6 +525,13 @@ label #checkbtn, label #checkbtn-close {
   nav .header-link li {
     display: block;
     margin-left: 20px;
+  }
+  nav .header-link li a:hover {
+    padding: 5px;
+    background: inherit;
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.5s;
   }
   .follow {
     display: none;
@@ -577,7 +588,7 @@ label #checkbtn, label #checkbtn-close {
   #Articles h1 {
     font-size: 40px;
     max-width: 3.8em;
-    border-bottom: 3px solid rgb(228, 202, 186);
+    border-bottom: 3px solid #1b2d45;
   }
   .articles-list {
     display: block;
