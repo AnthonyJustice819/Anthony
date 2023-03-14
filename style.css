@@ -42,13 +42,15 @@ body {
 
 nav .header-link {
   line-height: 80px;
+  font-family: 'Source Sans Pro', sans-serif; 
 }
 nav .header-link li {
   display: inline-block;
   margin: 0 20px;
 }
 nav .header-link li a {
-  color: #000;
+  color: #1b2d45;
+  font-size: 17px;
 }
 nav .header-link li a:hover {
   padding: 5px;
@@ -90,6 +92,7 @@ label #checkbtn, label #checkbtn-close {
   display: block;
   width: 100%;
   margin-left: 1em 0;
+  font-family: 'Lora', serif;
 }
 .title {
   max-width: 3em;
@@ -97,15 +100,19 @@ label #checkbtn, label #checkbtn-close {
   font-size: 26px;
   line-height: 1.5em;
   font-family: 'Fredoka One', cursive;
+  /* font-family: 'Fredoka One', cursive; */
 }
 .title-alt {
   font-size: 17px;
+  font-family: 'Libre Franklin', sans-serif; 
 }
 .title-sub {
   max-width: 10em;
   margin-top: 3em;
   padding-top: 9px;
+  font-size: 17px;
   border-top: 1px solid rgb(141, 136, 136);
+  font-family: 'Source Sans Pro', sans-serif; 
 }
 .hero-img {
   height: 18rem;
@@ -118,7 +125,7 @@ label #checkbtn, label #checkbtn-close {
   font-size: 43px;
   max-width: 3.8em;
   margin-bottom: 1em;
-  padding-bottom: 0.5em;
+  padding-bottom: 0.1em;
   border-bottom: 2px solid #1b2d45;
   font-family: 'Fredoka One', cursive;
 }
@@ -156,11 +163,14 @@ label #checkbtn, label #checkbtn-close {
 .About-content h1 {
   font-size: 35px;
   margin-bottom: 0.9em;
+  font-family: 'Fredoka One', cursive;
 }
 .About-content p {
   max-width: 27em;
   line-height: 1.5em;
-  font-size: 17px;
+  font-size: 17.3px;
+  font-family: 'Libre Franklin', sans-serif; 
+  /* font-family: 'Source Sans Pro', sans-serif; */
 }
 .social-links {
   margin-right: 10em;
@@ -181,21 +191,26 @@ label #checkbtn, label #checkbtn-close {
 }
 .contact-wrapper {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   flex-direction: row;
   box-shadow: rgb(0, 0, 0, 0.3) 0px 4px 12px;
   padding: 3em;
   border-radius: 16px;
 }
+.contact-wrapper > form {
+  align-items: center;
+}
 .contact-content h1 {
   margin-bottom: 1em;
   font-size: 35px;
+  font-family: 'Fredoka One', cursive;
 }
 .contact-content p {
   max-width: 24.5em;
   line-height: 1.5rem;
   font-size: 17px;
+  /* font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lora', serif; */
 }
 
  .form {
@@ -212,15 +227,22 @@ label #checkbtn, label #checkbtn-close {
   width: 60%;
   margin: 0px 8px 8px 0px;
   border: none;
-  outline: 2px solid rgb(228, 202, 186);
 }
 .message-grp textarea {
   width: 98%;
   height: 18em;
   border: none;
-  outline: 2px solid rgb(228, 202, 186);
 }
- 
+ .send-btn {
+  padding: .5rem;
+  color: #1b2d45;
+  background: rgb(228, 202, 186); 
+  outline: none;
+  border: none;
+  float: right;
+  margin-right: 7px;
+ }
+
 .footer {
   background: rgb(228, 202, 186);
   padding-top: .5em;
@@ -239,6 +261,7 @@ label #checkbtn, label #checkbtn-close {
 }
 .footer-copy {
   margin-top: 8vh;
+  font-family: 'Source Sans Pro', sans-serif; 
 }
 .footer-logo {
   height: 32px;
@@ -259,6 +282,7 @@ label #checkbtn, label #checkbtn-close {
   color: #1b2d45;
   padding: 6px;
   text-decoration: underline;
+  font-family: 'Phudu', cursive;
 }
 @media (max-width: 1200px) {
   body {
@@ -577,6 +601,7 @@ label #checkbtn, label #checkbtn-close {
     margin-top: 3em;
     padding-top: 9px;
     border-top: 1px solid rgb(141, 136, 136);
+    font-family: 'Libre Franklin', sans-serif;
   }
   .project {
     display: none;
@@ -601,7 +626,7 @@ label #checkbtn, label #checkbtn-close {
     box-shadow: rgb(0, 0, 0, 0.1) 0px 4px 12px;
   }
   .articles-list div:hover {
-    padding: 7em;
+    padding: none;
   }
   .articles-list div p {
     color: gray;
@@ -611,7 +636,7 @@ label #checkbtn, label #checkbtn-close {
     padding: 1em;
   }
   #About-section h1 {
-    font-size: 45px;
+    font-size: 35px;
     margin-bottom: 0.6em;
   }
   #About-section p {
@@ -625,16 +650,21 @@ label #checkbtn, label #checkbtn-close {
   .contact-wrapper {
     box-shadow: none;
     border-radius: 16px;
+    padding: 0;
+  }
+  .contact-wrapper > .contact-content h1 {
+    align-items: flex-start;
   }
   .contact-content {
     margin-bottom: 2em;
+    float: left;
   }
   .contact-content p {
     text-align: left;
   }
-   .form {
+   /* .form {
     height: 100vh;
-  }
+  } */
   .input-grp {
     display: flex;
     flex-wrap: wrap;
@@ -646,7 +676,6 @@ label #checkbtn, label #checkbtn-close {
     width: 80%;
     margin: 0px 8px 8px 0px;
     border: none;
-    outline: 2px solid rgb(228, 202, 186);
   } 
   .footer {
     background: rgb(228, 202, 186);
