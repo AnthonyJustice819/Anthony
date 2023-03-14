@@ -674,6 +674,7 @@ label #checkbtn, label #checkbtn-close {
     border: none;
   } 
   .footer {
+    height: 82vh;
     background: rgb(228, 202, 186);
     padding-top: 0em;
     padding-left: 1em;
