@@ -211,8 +211,6 @@ label #checkbtn-close {
   max-width: 24.5em;
   line-height: 1.5rem;
   font-size: 17px;
-  /* font-family: 'Source Sans Pro', sans-serif;
-  font-family: 'Lora', serif; */
 }
 
 .form {
@@ -659,9 +657,6 @@ label #checkbtn-close {
   .contact-content p {
     text-align: left;
   }
-  /* .form {
-    height: 100vh;
-  } */
   .input-grp {
     display: flex;
     flex-wrap: wrap;
