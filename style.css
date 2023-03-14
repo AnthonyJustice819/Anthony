@@ -7,7 +7,7 @@
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 3.5em;
+  scroll-padding-top: -8em;
 }
 body {
   width: 100%;
@@ -143,11 +143,7 @@ label #checkbtn, label #checkbtn-close {
   flex-direction: column;
   border-bottom-right-radius: 59px;
 }
-.article-card:hover {
-  background-color: #1b2d45;
-  color: #fff;
-  padding-top: 15em;
-}
+
 .card {
   border-radius: 14px;
   transition: 0.5s;
@@ -232,11 +228,13 @@ label #checkbtn, label #checkbtn-close {
   width: 60%;
   margin: 0px 8px 8px 0px;
   border: none;
+  outline: none;
 }
 .message-grp textarea {
   width: 98%;
   height: 18em;
   border: none;
+  outline: none;
 }
  .send-btn {
   padding: .5rem;
@@ -630,13 +628,6 @@ label #checkbtn, label #checkbtn-close {
     padding: 6em;
     box-shadow: rgb(0, 0, 0, 0.1) 0px 4px 12px;
   }
-  .articles-list div:hover {
-    padding: none;
-  }
-  .articles-list div p {
-    color: gray;
-    text-align: right;
-  }
   #About-section {
     padding: 1em;
   }
@@ -684,7 +675,7 @@ label #checkbtn, label #checkbtn-close {
   } 
   .footer {
     background: rgb(228, 202, 186);
-    padding-top: .5em;
+    padding-top: 0em;
     padding-left: 1em;
     padding-right: 1em;
   }
