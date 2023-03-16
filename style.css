@@ -149,45 +149,37 @@ label #checkbtn-close {
   border-radius: 14px;
   transition: 0.5s;
 }
-
 #About-section {
   padding: 5em 3em;
+}
+.About {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
 }
 .About-content h1 {
   font-size: 35px;
   margin-bottom: 0.9em;
-  font-family: "Fredoka One", cursive;
 }
 .About-content p {
-  max-width: 27em;
+  max-width: 30em;
+  font-size: 17px;
   line-height: 1.5em;
-  font-size: 17.3px;
-  font-weight: 100;
-  font-family: "Libre Franklin", sans-serif;
-  /* font-family: 'Source Sans Pro', sans-serif; */
 }
-#About-section > .social-links {
-  flex-wrap: wrap;
+.About-link {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5em;
 }
-.social-links {
-  margin-right: 10em;
+.About-link div:first-child {
+  margin-bottom: 1em;
 }
-.social-links a {
+.About-link div a {
   color: #000;
 }
-.twitter {
-  border-bottom: 2px solid #1b2d45;
-  padding-bottom: 7px;
-}
-.twitter,
-.github {
-  margin: 0 0 10px 0;
-}
-#contact {
+
+
+/* #contact {
   padding: 3em 3em;
 }
 .contact-wrapper {
@@ -243,7 +235,7 @@ label #checkbtn-close {
   border: none;
   float: right;
   margin-right: 7px;
-}
+} */
 
 .footer {
   background: rgb(228, 202, 186);
@@ -338,6 +330,18 @@ label #checkbtn-close {
     margin-bottom: 0.5em;
   }
 }
+@media (max-width: 800px) {
+  .About-content p {
+    max-width: 28em;
+    font-size: 17px;
+    line-height: 1.5em;
+  }
+  .About-link {
+    display: flex;
+    flex-direction: column;
+    margin-right: 0em;
+  }
+}
 @media (max-width: 770px) {
   #Home {
     width: 100%;
@@ -360,22 +364,8 @@ label #checkbtn-close {
   }
 }
 @media (max-width: 680px) {
-  #About-section {
-    padding: 5em 3em 1em;
-    display: block;
-    justify-content: space-between;
-    align-items: center;
-  }
   .About-content p {
-    max-width: 31em;
-    line-height: 1.5em;
-    font-size: 17px;
-  }
-  .About-content {
-    margin-bottom: 2em;
-  }
-  .social-links {
-    max-width: 5.8em;
+    max-width: 23em;
   }
 }
 
@@ -399,6 +389,10 @@ label #checkbtn-close {
   }
 }
 @media (max-width: 599px) {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 3.6em;
+  }
   body {
     font-family: sans-serif;
     padding: 0;
@@ -457,8 +451,8 @@ label #checkbtn-close {
   }
   nav .header-link li a:hover {
     padding: 5px;
-    background: #f2edd7ff;
-    color: #000;
+    background: inherit;
+    color: #fff;
     border-radius: 5px;
     transition: all 0.5s;
   }
@@ -481,6 +475,16 @@ label #checkbtn-close {
   }
   #About-section {
     padding: 1em;
+  }
+  .About {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .About-link div:first-child {
+    margin-bottom: 1em;
+    margin-top: 1.3em;
   }
   .footer-copy p {
     margin-bottom: 1.5em;
@@ -631,31 +635,6 @@ label #checkbtn-close {
     padding: 6em;
     box-shadow: rgb(0, 0, 0, 0.1) 0px 4px 12px;
   }
-  #About-section {
-    padding: 1em;
-  }
-  #About-section h1 {
-    font-size: 35px;
-    margin-bottom: 0.6em;
-  }
-  #About-section p {
-    line-height: 1.5em;
-    font-size: 17px;
-  }
-  .social-links {
-    margin-right: 10em;
-  }
-  .social-links a {
-    color: #000;
-  }
-  .twitter {
-    border-bottom: 2px solid #1b2d45;
-    padding-bottom: 7px;
-  }
-  .twitter,
-  .github {
-    margin: 0 0 8px 0;
-  }
   #contact {
     padding: 1em;
     margin-bottom: 2em;
@@ -688,7 +667,7 @@ label #checkbtn-close {
     border: none;
   }
   .footer {
-    height: 70vh;
+    /* height: 80vh; */
     background: rgb(228, 202, 186);
     padding-top: 0em;
     padding-left: 1em;
