@@ -642,6 +642,20 @@ label #checkbtn-close {
     line-height: 1.5em;
     font-size: 17px;
   }
+  .social-links {
+    margin-right: 10em;
+  }
+  .social-links a {
+    color: #000;
+  }
+  .twitter {
+    border-bottom: 2px solid #1b2d45;
+    padding-bottom: 7px;
+  }
+  .twitter,
+  .github {
+    margin: 0 0 8px 0;
+  }
   #contact {
     padding: 1em;
     margin-bottom: 2em;
@@ -674,7 +688,7 @@ label #checkbtn-close {
     border: none;
   }
   .footer {
-    height: 81vh;
+    height: 70vh;
     background: rgb(228, 202, 186);
     padding-top: 0em;
     padding-left: 1em;
