@@ -486,6 +486,9 @@ label #checkbtn-close {
     margin-bottom: 1em;
     margin-top: 1.3em;
   }
+  #contact-section {
+    padding: 1em;
+  }
   .contact-form {
     display: flex;
     flex-direction: column;
@@ -639,6 +642,9 @@ label #checkbtn-close {
     background: rgb(228, 202, 186);
     padding: 6em;
     box-shadow: rgb(0, 0, 0, 0.1) 0px 4px 12px;
+  }
+  #contact-section {
+    padding: 1em;
   }
   .input-grp {
     width: 100%;
