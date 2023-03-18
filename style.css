@@ -172,12 +172,62 @@ label #checkbtn-close {
   margin-right: 5em;
 }
 .About-link div:first-child {
-  margin-bottom: 1em;
+  border-bottom: 2px solid #1b2d45;
+  margin-bottom: .4em;
+  padding-bottom: .3em;
 }
 .About-link div a {
   color: #000;
 }
-
+#contact-section {
+  padding: 5em 3em;
+}
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 20px;
+  box-shadow: rgb(0, 0, 0, 0.2) 4px 8px 16px;
+  padding: 3em;
+}
+.contact-content h1 {
+  font-size: 35px;
+  margin-bottom: 0.9em;
+}
+.contact-content p {
+  max-width: 30em;
+  font-size: 17px;
+  line-height: 1.5em;
+}
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.input-grp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+input {
+  height: 6vh;
+  width: 35.2vh;
+  margin: 0px 8px 8px 0px;
+  border: none;
+  outline: none;
+}
+.contact-form > textarea {
+  flex-wrap: wrap;
+}
+textarea {
+  width: 71.7vh;
+  height: 15em;
+  border: none;
+  outline: none;
+}
 
 /* #contact {
   padding: 3em 3em;
@@ -286,14 +336,22 @@ label #checkbtn-close {
     background: lightcoral;
   }
 }
-@media (max-width: 1070px) {
+@media (max-width: 1080px) {
   .contact-content p {
     max-width: 25em;
   }
 }
 @media (max-width: 990px) {
   .contact-content p {
-    max-width: 20em;
+    max-width: 23em;
+  }
+}
+@media (max-width: 950px) {
+  .contact {
+    justify-content: center;
+  }
+  .contact-content {
+    margin-bottom: 2.5em;
   }
 }
 @media (max-width: 940px) {
@@ -302,14 +360,10 @@ label #checkbtn-close {
   }
 }
 @media (max-width: 900px) {
-  .contact-content p {
-    max-width: 18em;
-  }
+  
 }
 @media (max-width: 870px) {
-  .contact-wrapper {
-    padding: 3em 0.5em;
-  }
+ 
 }
 @media (max-width: 840px) {
   .social-links {
@@ -320,12 +374,7 @@ label #checkbtn-close {
   }
 }
 @media (max-width: 810px) {
-  .contact-wrapper {
-    flex-direction: column;
-  }
-  .contact-content {
-    margin-bottom: 2em;
-  }
+
   .input-grp {
     margin-bottom: 0.5em;
   }
@@ -486,6 +535,9 @@ label #checkbtn-close {
     margin-bottom: 1em;
     margin-top: 1.3em;
   }
+  #contact-section {
+    padding: 1em;
+  }
   .footer-copy p {
     margin-bottom: 1.5em;
   }
@@ -634,25 +686,6 @@ label #checkbtn-close {
     background: rgb(228, 202, 186);
     padding: 6em;
     box-shadow: rgb(0, 0, 0, 0.1) 0px 4px 12px;
-  }
-  #contact {
-    padding: 1em;
-    margin-bottom: 2em;
-  }
-  .contact-wrapper {
-    box-shadow: none;
-    border-radius: 16px;
-    padding: 0;
-  }
-  .contact-wrapper > .contact-content h1 {
-    align-items: flex-start;
-  }
-  .contact-content {
-    margin-bottom: 2em;
-    float: left;
-  }
-  .contact-content p {
-    text-align: left;
   }
   .input-grp {
     display: flex;
