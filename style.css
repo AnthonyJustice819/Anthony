@@ -214,7 +214,7 @@ label #checkbtn-close {
 }
 input {
   height: 6vh;
-  width: 35.2vh;
+  width: 30vh;
   margin: 0px 8px 8px 0px;
   border: none;
   outline: none;
@@ -223,8 +223,6 @@ input {
   flex-wrap: wrap;
 }
 textarea {
-  width: 71.7vh;
-  height: 15em;
   border: none;
   outline: none;
 }
