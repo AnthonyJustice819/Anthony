@@ -101,7 +101,6 @@ label #checkbtn-close {
   font-size: 26px;
   line-height: 1.5em;
   font-family: "Fredoka One", cursive;
-  /* font-family: 'Fredoka One', cursive; */
 }
 .title-alt {
   font-size: 17px;
@@ -647,7 +646,7 @@ label #checkbtn-close {
     flex-direction: column;
   }
   .footer {
-    height: 75vh;
+    height: 72vh;
     background: rgb(228, 202, 186);
     padding-top: 0em;
     padding-left: 1em;
