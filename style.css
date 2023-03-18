@@ -184,7 +184,6 @@ label #checkbtn-close {
 }
 .contact {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   border-radius: 20px;
@@ -202,7 +201,6 @@ label #checkbtn-close {
 }
 .contact-form {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -213,15 +211,13 @@ label #checkbtn-close {
   justify-content: space-between;
 }
 input {
-  height: 6vh;
+  height: 40px;
   width: 60%;
   margin: 0px 8px 8px 0px;
   border: none;
   outline: none;
 }
-.contact-form > textarea {
-  flex-wrap: wrap;
-}
+
 textarea {
   border: none;
   outline: none;
