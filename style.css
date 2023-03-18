@@ -160,6 +160,7 @@ label #checkbtn-close {
 .About-content h1 {
   font-size: 35px;
   margin-bottom: 0.9em;
+  font-family: "Fredoka One", cursive;
 }
 .About-content p {
   max-width: 30em;
@@ -193,6 +194,7 @@ label #checkbtn-close {
 .contact-content h1 {
   font-size: 35px;
   margin-bottom: 0.9em;
+  font-family: "Fredoka One", cursive;
 }
 .contact-content p {
   max-width: 30em;
@@ -212,7 +214,7 @@ label #checkbtn-close {
 }
 .input-grp input {
   width: 80%;
-  height: 30px;
+  height: 35px;
   border: 0;
   outline: none;
   margin: 0px 4px 5px 0px;
@@ -229,15 +231,6 @@ label #checkbtn-close {
   outline: none;
 }
 
-/* .send-btn {
-  padding: 0.5rem;
-  color: #1b2d45;
-  background: rgb(228, 202, 186);
-  outline: none;
-  border: none;
-  float: right;
-  margin-right: 7px;
-}  */
 
 .footer {
   background: rgb(228, 202, 186);
@@ -654,6 +647,7 @@ label #checkbtn-close {
     flex-direction: column;
   }
   .footer {
+    height: 75vh;
     background: rgb(228, 202, 186);
     padding-top: 0em;
     padding-left: 1em;
