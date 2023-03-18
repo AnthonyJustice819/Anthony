@@ -199,79 +199,37 @@ label #checkbtn-close {
   font-size: 17px;
   line-height: 1.5em;
 }
+
 .contact-form {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
 }
 .input-grp {
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-input {
-  height: 40px;
-  width: 60%;
-  margin: 0px 8px 8px 0px;
-  border: none;
-  outline: none;
-}
-
-textarea {
-  border: none;
-  outline: none;
-}
-
-/* #contact {
-  padding: 3em 3em;
-}
-.contact-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  flex-direction: row;
-  box-shadow: rgb(0, 0, 0, 0.3) 0px 4px 12px;
-  padding: 3em;
-  border-radius: 16px;
-}
-.contact-wrapper > form {
-  align-items: center;
-}
-.contact-content h1 {
-  margin-bottom: 1em;
-  font-size: 35px;
-  font-family: "Fredoka One", cursive;
-}
-.contact-content p {
-  max-width: 24.5em;
-  line-height: 1.5rem;
-  font-size: 17px;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-.input-grp {
-  display: flex;
 }
 .input-grp input {
-  height: 6vh;
-  width: 60%;
-  margin: 0px 8px 8px 0px;
-  border: none;
+  width: 80%;
+  height: 30px;
+  border: 0;
+  outline: none;
+  margin: 0px 4px 5px 0px;
+}
+.txt-area {
+  width: 100%;
+}
+.txt-area textarea {
+  height: 15em;
+  width: 99%;
+  display: flex;
+  flex-wrap: wrap;
+  border: 0;
   outline: none;
 }
-.message-grp textarea {
-  width: 98%;
-  height: 18em;
-  border: none;
-  outline: none;
-}
-.send-btn {
+
+/* .send-btn {
   padding: 0.5rem;
   color: #1b2d45;
   background: rgb(228, 202, 186);
@@ -279,7 +237,7 @@ textarea {
   border: none;
   float: right;
   margin-right: 7px;
-} */
+}  */
 
 .footer {
   background: rgb(228, 202, 186);
@@ -322,7 +280,7 @@ textarea {
   text-decoration: underline;
   font-family: "Phudu", cursive;
 }
-@media (max-width: 1200px) {
+@media  screen and (max-width: 1200px) {
   body {
     width: 100%;
     font-family: sans-serif;
@@ -330,36 +288,38 @@ textarea {
     background: lightcoral;
   }
 }
-@media (max-width: 1080px) {
-  .contact-content p {
-    max-width: 25em;
-  }
-}
-@media (max-width: 990px) {
-  .contact-content p {
-    max-width: 23em;
-  }
-}
-@media (max-width: 950px) {
-  .contact {
-    justify-content: center;
-  }
+@media screen and (max-width: 1100px) {
   .contact-content {
-    margin-bottom: 2.5em;
+    max-width: 24em;
   }
 }
-@media (max-width: 940px) {
+@media screen and (max-width: 1080px) {
+
+}
+@media  screen and (max-width: 990px) {
+ 
+}
+@media  screen and (max-width: 950px) {
+ .contact {
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+ }
+ .contact-content {
+  margin-bottom: 2em;
+ }
+}
+@media  screen and (max-width: 940px) {
   .articles-list {
     flex-wrap: wrap;
   }
 }
-@media (max-width: 900px) {
+@media  screen and (max-width: 900px) {
   
 }
-@media (max-width: 870px) {
+@media  screen and (max-width: 870px) {
  
 }
-@media (max-width: 840px) {
+@media  screen and (max-width: 840px) {
   .social-links {
     margin-right: 0;
   }
@@ -367,13 +327,10 @@ textarea {
     max-width: 15em;
   }
 }
-@media (max-width: 810px) {
+@media  screen and (max-width: 810px) {
 
-  .input-grp {
-    margin-bottom: 0.5em;
-  }
 }
-@media (max-width: 800px) {
+@media  screen and (max-width: 800px) {
   .About-content p {
     max-width: 28em;
     font-size: 17px;
@@ -385,7 +342,7 @@ textarea {
     margin-right: 0em;
   }
 }
-@media (max-width: 770px) {
+@media  screen and (max-width: 770px) {
   #Home {
     width: 100%;
     background: #f2edd7ff;
@@ -406,13 +363,13 @@ textarea {
     display: none;
   }
 }
-@media (max-width: 680px) {
+@media  screen and (max-width: 680px) {
   .About-content p {
     max-width: 23em;
   }
 }
 
-@media (max-width: 588px) {
+@media  screen and (max-width: 588px) {
   #Home {
     width: 100%;
     background: #f2edd7ff;
@@ -431,7 +388,7 @@ textarea {
     display: none;
   }
 }
-@media (max-width: 599px) {
+@media  screen and (max-width: 599px) {
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 3.6em;
@@ -529,9 +486,11 @@ textarea {
     margin-bottom: 1em;
     margin-top: 1.3em;
   }
-  #contact-section {
-    padding: 1em;
+  .contact-form {
+    display: flex;
+    flex-direction: column;
   }
+  
   .footer-copy p {
     margin-bottom: 1.5em;
   }
@@ -544,7 +503,7 @@ textarea {
 }
 
 /* mobile screen size */
-@media (max-width: 500px) {
+@media  screen and (max-width: 500px) {
   html {
   scroll-behavior: smooth;
   scroll-padding-top: 3em;
@@ -682,19 +641,13 @@ textarea {
     box-shadow: rgb(0, 0, 0, 0.1) 0px 4px 12px;
   }
   .input-grp {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
     justify-content: center;
-    margin-bottom: 0.5em;
-  }
-  .input-grp input {
-    height: 6vh;
-    width: 80%;
-    margin: 0px 8px 8px 0px;
-    border: none;
+    flex-direction: column;
   }
   .footer {
-    /* height: 80vh; */
     background: rgb(228, 202, 186);
     padding-top: 0em;
     padding-left: 1em;
