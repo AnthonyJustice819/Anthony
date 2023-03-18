@@ -646,7 +646,7 @@ label #checkbtn-close {
     flex-direction: column;
   }
   .footer {
-    height: 72vh;
+    height: 0;
     background: rgb(228, 202, 186);
     padding-top: 0em;
     padding-left: 1em;
