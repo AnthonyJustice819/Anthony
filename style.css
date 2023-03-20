@@ -163,8 +163,9 @@ label #checkbtn-close {
 }
 .About-content p {
   max-width: 30em;
-  font-size: 17px;
+  font-size: 19px;
   line-height: 1.5em;
+  font-family: 'Alice', serif
 }
 .About-link {
   display: flex;
@@ -199,6 +200,7 @@ label #checkbtn-close {
   max-width: 30em;
   font-size: 17px;
   line-height: 1.5em;
+  font-family: 'PT Serif', serif;
 }
 
 .contact-form {
@@ -252,8 +254,6 @@ label #checkbtn-close {
   flex-wrap: wrap;
   margin-top: 2em;
   font-size: 17px;
-  align-items: center;
-  justify-content: center;
 }
 .footer-content > .footer-copy,
 .footer-nav {
@@ -508,7 +508,7 @@ label #checkbtn-close {
 }
 
 /* mobile screen size */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px ) {
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 3em;
@@ -656,7 +656,6 @@ label #checkbtn-close {
     flex-direction: column;
   }
   .footer {
-    height: 65vh;
     background: rgb(228, 202, 186);
     padding-top: 0em;
     padding-left: 1em;
