@@ -243,6 +243,7 @@ label #checkbtn-close {
   font-weight: bolder;
 }
 .footer {
+  width: 100%;
   background: rgb(228, 202, 186);
   padding-top: 0.5em;
   padding-left: 3em;
@@ -657,7 +658,7 @@ label #checkbtn-close {
   }
   .footer {
     background: rgb(228, 202, 186);
-    padding-top: 0em;
+    padding-top: .2em;
     padding-left: 1em;
     padding-right: 1em;
   }
