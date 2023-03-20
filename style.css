@@ -173,8 +173,8 @@ label #checkbtn-close {
 }
 .About-link div:first-child {
   border-bottom: 2px solid #1b2d45;
-  margin-bottom: .4em;
-  padding-bottom: .3em;
+  margin-bottom: 0.4em;
+  padding-bottom: 0.3em;
 }
 .About-link div a {
   color: #000;
@@ -234,31 +234,32 @@ label #checkbtn-close {
 .send-btn {
   padding: 8px;
   float: right;
-  margin-top: .8rem;
+  margin-top: 0.8rem;
   background: #a6b7ce;
   border: 0;
   border-radius: 5px;
   font-weight: bolder;
 }
-
 .footer {
   background: rgb(228, 202, 186);
   padding-top: 0.5em;
   padding-left: 3em;
   padding-right: 3em;
+  padding-bottom: 1em;
 }
 .footer-content {
   display: flex;
   flex-wrap: wrap;
   margin-top: 2em;
   font-size: 17px;
+  align-items: center;
+  justify-content: center;
 }
 .footer-content > .footer-copy,
 .footer-nav {
   flex: 1;
 }
 .footer-copy {
-  margin-top: 8vh;
   font-family: "Source Sans Pro", sans-serif;
 }
 .footer-logo {
@@ -282,7 +283,7 @@ label #checkbtn-close {
   text-decoration: underline;
   font-family: "Phudu", cursive;
 }
-@media  screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   body {
     width: 100%;
     font-family: sans-serif;
@@ -295,39 +296,33 @@ label #checkbtn-close {
     max-width: 24em;
   }
 }
-@media screen and (max-width: 1080px) {
-
+@media screen and (max-width: 915px) {
+  .contact-content h1 {
+    max-width: 8em;
+  }
+  .contact-content p {
+    max-width: 18em;
+  }
 }
-@media  screen and (max-width: 990px) {
+@media screen and (max-width: 980px) {
   .contact {
-  flex-direction: column;
- }
- .contact-content {
-  margin-bottom: 2em;
- }
+    padding: 3em 1em;
+  }
 }
-@media  screen and (max-width: 990px) {
-  .contact {
-  padding: 3em 1em;
- }
-}
-@media  screen and (max-width: 950px) {
- .contact-content {
-  margin-bottom: 2em;
- }
-}
-@media  screen and (max-width: 940px) {
+@media screen and (max-width: 940px) {
   .articles-list {
     flex-wrap: wrap;
   }
 }
-@media  screen and (max-width: 900px) {
-  
+@media screen and (max-width: 845px) {
+  .contact {
+    flex-direction: column;
+  }
+  .contact-content {
+    margin-bottom: 2em;
+  }
 }
-@media  screen and (max-width: 870px) {
- 
-}
-@media  screen and (max-width: 840px) {
+@media screen and (max-width: 840px) {
   .social-links {
     margin-right: 0;
   }
@@ -335,10 +330,9 @@ label #checkbtn-close {
     max-width: 15em;
   }
 }
-@media  screen and (max-width: 810px) {
-
+@media screen and (max-width: 810px) {
 }
-@media  screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
   .About-content p {
     max-width: 28em;
     font-size: 17px;
@@ -350,7 +344,7 @@ label #checkbtn-close {
     margin-right: 0em;
   }
 }
-@media  screen and (max-width: 770px) {
+@media screen and (max-width: 770px) {
   #Home {
     width: 100%;
     background: #f2edd7ff;
@@ -371,13 +365,13 @@ label #checkbtn-close {
     display: none;
   }
 }
-@media  screen and (max-width: 680px) {
+@media screen and (max-width: 680px) {
   .About-content p {
     max-width: 23em;
   }
 }
 
-@media  screen and (max-width: 588px) {
+@media screen and (max-width: 588px) {
   #Home {
     width: 100%;
     background: #f2edd7ff;
@@ -396,7 +390,7 @@ label #checkbtn-close {
     display: none;
   }
 }
-@media  screen and (max-width: 599px) {
+@media screen and (max-width: 599px) {
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 3.6em;
@@ -501,7 +495,7 @@ label #checkbtn-close {
     display: flex;
     flex-direction: column;
   }
-  
+
   .footer-copy p {
     margin-bottom: 1.5em;
   }
@@ -514,11 +508,11 @@ label #checkbtn-close {
 }
 
 /* mobile screen size */
-@media  screen and (max-width: 500px) {
+@media screen and (max-width: 500px) {
   html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 3em;
-}
+    scroll-behavior: smooth;
+    scroll-padding-top: 3em;
+  }
   body {
     font-family: sans-serif;
     padding: 0;
