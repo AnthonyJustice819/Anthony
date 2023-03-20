@@ -217,6 +217,7 @@ label #checkbtn-close {
   border: 0;
   outline: none;
   margin: 0px 4px 5px 0px;
+  border-radius: 5px;
 }
 .txt-area {
   width: 100%;
@@ -228,8 +229,17 @@ label #checkbtn-close {
   flex-wrap: wrap;
   border: 0;
   outline: none;
+  border-radius: 5px;
 }
-
+.send-btn {
+  padding: 8px;
+  float: right;
+  margin-top: .8rem;
+  background: #a6b7ce;
+  border: 0;
+  border-radius: 5px;
+  font-weight: bolder;
+}
 
 .footer {
   background: rgb(228, 202, 186);
@@ -289,13 +299,19 @@ label #checkbtn-close {
 
 }
 @media  screen and (max-width: 990px) {
- 
+  .contact {
+  flex-direction: column;
+ }
+ .contact-content {
+  margin-bottom: 2em;
+ }
+}
+@media  screen and (max-width: 990px) {
+  .contact {
+  padding: 3em 1em;
+ }
 }
 @media  screen and (max-width: 950px) {
- .contact {
-  flex-direction: column;
-  /* flex-wrap: wrap; */
- }
  .contact-content {
   margin-bottom: 2em;
  }
