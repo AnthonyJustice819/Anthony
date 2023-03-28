@@ -123,6 +123,7 @@ label #checkbtn-close {
   background: lightgrey;
 }
 #Articles h1 {
+  /* font-weight: 700; */
   font-size: 43px;
   max-width: 3.8em;
   margin-bottom: 1em;
@@ -158,6 +159,7 @@ label #checkbtn-close {
   justify-content: space-between;
 }
 .About-content h1 {
+  font-weight: 700;
   font-size: 43px;
   margin-bottom: 0.9em;
   font-family: 'Inter', sans-serif;
@@ -193,13 +195,14 @@ label #checkbtn-close {
   padding: 3em;
 }
 .contact-content h1 {
+  font-weight: 700;
   font-size: 43px;
   margin-bottom: 0.9em;
   font-family: 'Inter', sans-serif;
 }
 .contact-content p {
   max-width: 30em;
-  font-size: 19px;
+  font-size: 17px;
   line-height: 1.5em;
   font-family: 'Inter', sans-serif;
 }
