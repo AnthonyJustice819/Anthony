@@ -101,11 +101,11 @@ label #checkbtn-close {
   font-size: 26px;
   font-weight: 900;
   line-height: 1.5em;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .title-alt {
   font-size: 17px;
-  font-family: "Libre Franklin", sans-serif;
+  font-family:'Montserrat', sans-serif;
 }
 .title-sub {
   max-width: 10em;
@@ -113,7 +113,7 @@ label #checkbtn-close {
   padding-top: 9px;
   font-size: 17px;
   border-top: 1px solid rgb(141, 136, 136);
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .hero-img {
   height: 18rem;
@@ -123,13 +123,13 @@ label #checkbtn-close {
   background: lightgrey;
 }
 #Articles h1 {
-  /* font-weight: 700; */
-  font-size: 43px;
-  max-width: 3.8em;
+  font-weight: 900;
+  font-size: 40px;
+  max-width: 4.3em;
   margin-bottom: 1em;
   padding-bottom: 0.1em;
   border-bottom: 2px solid #1b2d45;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .article-card-list {
   display: flex;
@@ -159,16 +159,16 @@ label #checkbtn-close {
   justify-content: space-between;
 }
 .About-content h1 {
-  font-weight: 700;
-  font-size: 43px;
+  font-weight: 900;
+  font-size: 40px;
   margin-bottom: 0.9em;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .About-content p {
   max-width: 30em;
   font-size: 17px;
   line-height: 1.5em;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .About-link {
   display: flex;
@@ -195,16 +195,16 @@ label #checkbtn-close {
   padding: 3em;
 }
 .contact-content h1 {
-  font-weight: 700;
-  font-size: 43px;
+  font-weight: 900;
+  font-size: 40px;
   margin-bottom: 0.9em;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .contact-content p {
   max-width: 30em;
   font-size: 17px;
   line-height: 1.5em;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .contact-form {
@@ -267,7 +267,7 @@ label #checkbtn-close {
   flex: 1;
 }
 .footer-copy {
-  font-family: 'Oxygen', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
 }
 .footer-logo {
@@ -579,7 +579,7 @@ label #checkbtn-close {
   }
   nav .header-link li {
     display: block;
-    margin-left: 20px;
+    text-align: left;
   }
   nav .header-link li a:hover {
     padding: 5px;
@@ -643,7 +643,7 @@ label #checkbtn-close {
 
   #Articles h1 {
     font-size: 40px;
-    max-width: 3.8em;
+    max-width: 4.4em;
     border-bottom: 3px solid #1b2d45;
   }
   .articles-list {
