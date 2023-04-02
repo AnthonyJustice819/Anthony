@@ -11,7 +11,6 @@ html {
 }
 body {
   width: 100%;
-  font-family: sans-serif;
   color: #1b2d45;
   padding-top: 2em;
   padding-left: 3em;
@@ -93,7 +92,6 @@ label #checkbtn-close {
   display: block;
   width: 100%;
   margin-left: 1em 0;
-  font-family:'Montserrat', sans-serif;
 }
 .title {
   max-width: 3em;
@@ -105,7 +103,7 @@ label #checkbtn-close {
 }
 .title-alt {
   font-size: 17px;
-  font-family:'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .title-sub {
   max-width: 10em;
@@ -117,6 +115,9 @@ label #checkbtn-close {
 }
 .hero-img {
   height: 18rem;
+}
+.project p {
+  font-family: 'Montserrat', sans-serif;
 }
 #Articles {
   padding: 5em 3em;
@@ -144,6 +145,7 @@ label #checkbtn-close {
   padding: 1.6em 3em;
   flex-direction: column;
   border-bottom-right-radius: 59px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .card {
@@ -269,7 +271,6 @@ label #checkbtn-close {
 }
 .footer-copy {
   font-family: 'Montserrat', sans-serif;
-
 }
 .footer-logo {
   height: 32px;
@@ -290,13 +291,11 @@ label #checkbtn-close {
   color: #1b2d45;
   padding: 6px;
   text-decoration: underline;
-  font-family: 'Oxygen', sans-serif;
-
+  font-family: 'Montserrat', sans-serif;
 }
 @media screen and (max-width: 1200px) {
   body {
     width: 100%;
-    font-family: sans-serif;
     padding: 0;
     background: lightcoral;
   }
@@ -406,7 +405,6 @@ label #checkbtn-close {
     scroll-padding-top: 3.6em;
   }
   body {
-    font-family: sans-serif;
     padding: 0;
     background: #fff;
   }
@@ -526,7 +524,6 @@ label #checkbtn-close {
     scroll-padding-top: 3em;
   }
   body {
-    font-family: sans-serif;
     padding: 0;
     background: #fff;
   }
@@ -633,7 +630,6 @@ label #checkbtn-close {
     margin-top: 3em;
     padding-top: 9px;
     border-top: 1px solid rgb(141, 136, 136);
-    font-family: "Libre Franklin", sans-serif;
   }
   .project {
     display: none;
