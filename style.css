@@ -669,9 +669,11 @@ label #checkbtn-close {
     flex-direction: column;
   }
   .footer {
-    display: block;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    background-color: lightgray;
+    width: 100%;
+    background-color: #f1f0f0;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    padding-right: 1em;
+    padding-left: 1em;
   }
 }
