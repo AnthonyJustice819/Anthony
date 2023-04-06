@@ -45,7 +45,7 @@ nav .header-link {
 }
 nav .header-link li {
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 20px; 
 }
 nav .header-link li a {
   color: #1b2d45;
@@ -103,7 +103,7 @@ label #checkbtn-close {
 }
 .title-alt {
   font-size: 17px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif
 }
 .title-sub {
   max-width: 10em;
@@ -111,7 +111,7 @@ label #checkbtn-close {
   padding-top: 9px;
   font-size: 17px;
   border-top: 1px solid rgb(141, 136, 136);
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif
 }
 .hero-img {
   height: 18rem;
@@ -171,7 +171,7 @@ label #checkbtn-close {
   font-size: 17px;
   line-height: 1.5em;
   font-weight: 300;
-  font-family: 'Montserrat', sans-serif; 
+  font-family: 'Inter', sans-serif 
 }
 .About-link {
   display: flex;
@@ -207,7 +207,7 @@ label #checkbtn-close {
   max-width: 30em;
   font-size: 17px;
   line-height: 1.5em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif
 }
 
 .contact-form {
@@ -270,7 +270,7 @@ label #checkbtn-close {
   flex: 1;
 }
 .footer-copy {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif
 }
 .footer-logo {
   height: 32px;
@@ -291,7 +291,7 @@ label #checkbtn-close {
   color: #1b2d45;
   padding: 6px;
   text-decoration: underline;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif
 }
 @media screen and (max-width: 1200px) {
   body {
