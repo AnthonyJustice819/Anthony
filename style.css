@@ -225,9 +225,9 @@ label #checkbtn-close {
   height: 35px;
   border: 0;
   outline: none;
-  margin: 0px 4px 5px 0px;
+  margin: 0px 4px 1rem 0px;
   border-radius: 5px;
-  background-color: rgb(226, 223, 223);
+  box-shadow: rgb(0, 0, 0, 0.2) 2px 4px 8px;
 }
 .txt-area {
   width: 100%;
@@ -240,7 +240,7 @@ label #checkbtn-close {
   border: 0;
   outline: none;
   border-radius: 5px;
-  background-color: rgb(226, 223, 223);
+  box-shadow: rgb(0, 0, 0, 0.2) 2px 4px 8px;
 }
 .send-btn {
   padding: 8px;
@@ -482,9 +482,11 @@ label #checkbtn-close {
   }
   #Articles {
     padding: 1em;
+    margin-bottom: 2em;
   }
   #About-section {
     padding: 1em;
+    margin-bottom: 2em;
   }
   .About {
     display: flex;
@@ -498,12 +500,15 @@ label #checkbtn-close {
   }
   #contact-section {
     padding: 1em;
+    margin-bottom: 2em;
   }
   .contact-form {
     display: flex;
     flex-direction: column;
   }
 .footer {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
   background: lightgray;
 }
   .footer-copy p {
@@ -636,7 +641,9 @@ label #checkbtn-close {
   .hero-img {
     display: none;
   }
-
+#Article {
+  margin-bottom: 2em;
+}
   #Articles h1 {
     font-size: 40px;
     max-width: 4.4em;
@@ -663,8 +670,8 @@ label #checkbtn-close {
     flex-direction: column;
   }
   .footer {
-    padding-top: .2em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: lightgray;
   }
 }
