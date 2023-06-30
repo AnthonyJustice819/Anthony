@@ -99,11 +99,11 @@ label #checkbtn-close {
   font-size: 26px;
   font-weight: 900;
   line-height: 1.5em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .title-alt {
   font-size: 17px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .title-sub {
   max-width: 10em;
@@ -111,17 +111,17 @@ label #checkbtn-close {
   padding-top: 9px;
   font-size: 17px;
   border-top: 1px solid rgb(141, 136, 136);
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .hero-img {
   height: 18rem;
 }
 .project p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 #Articles {
   padding: 5em 3em;
-  background: lightgrey;
+  background-color: #f1f0f0;
 }
 #Articles h1 {
   font-weight: 900;
@@ -130,7 +130,7 @@ label #checkbtn-close {
   margin-bottom: 1em;
   padding-bottom: 0.1em;
   border-bottom: 2px solid #1b2d45;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .article-card-list {
   display: flex;
@@ -145,7 +145,7 @@ label #checkbtn-close {
   padding: 1.6em 3em;
   flex-direction: column;
   border-bottom-right-radius: 59px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .card {
@@ -164,14 +164,14 @@ label #checkbtn-close {
   font-weight: 900;
   font-size: 40px;
   margin-bottom: 0.9em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .About-content p {
   max-width: 30em;
   font-size: 17px;
   line-height: 1.5em;
   font-weight: 300;
-  font-family: 'Montserrat', sans-serif; 
+  font-family: "Inter", sans-serif;
 }
 .About-link {
   display: flex;
@@ -201,13 +201,13 @@ label #checkbtn-close {
   font-weight: 900;
   font-size: 40px;
   margin-bottom: 0.9em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .contact-content p {
   max-width: 30em;
   font-size: 17px;
   line-height: 1.5em;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 .contact-form {
@@ -225,9 +225,10 @@ label #checkbtn-close {
   height: 35px;
   border: 0;
   outline: none;
-  margin: 0px 4px 5px 0px;
+  margin: 0px 4px 1rem 0px;
   border-radius: 5px;
-  background-color: rgb(226, 223, 223);
+  background-color: #f1f0f0;
+  box-shadow: rgb(0, 0, 0, 0.2) 2px 4px 8px;
 }
 .txt-area {
   width: 100%;
@@ -240,24 +241,23 @@ label #checkbtn-close {
   border: 0;
   outline: none;
   border-radius: 5px;
-  background-color: rgb(226, 223, 223);
+  background-color: #f1f0f0;
+  box-shadow: rgb(0, 0, 0, 0.2) 2px 4px 8px;
 }
 .send-btn {
   padding: 8px;
   float: right;
   margin-top: 0.8rem;
-  background:  rgb(226, 223, 223);
+  background: rgb(226, 223, 223);
   border: 0;
   border-radius: 5px;
   font-weight: bolder;
 }
 .footer {
   width: 100%;
-  background: lightgray;
-  padding-top: 0.5em;
-  padding-left: 3em;
-  padding-right: 3em;
-  padding-bottom: 1em;
+  background-color: #f1f0f0;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .footer-content {
   display: flex;
@@ -270,12 +270,12 @@ label #checkbtn-close {
   flex: 1;
 }
 .footer-copy {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .footer-logo {
   height: 32px;
   width: 32px;
-  margin-bottom: .2em;
+  margin-bottom: 0.2em;
 }
 .footer-nav {
   display: flex;
@@ -291,7 +291,7 @@ label #checkbtn-close {
   color: #1b2d45;
   padding: 6px;
   text-decoration: underline;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 @media screen and (max-width: 1200px) {
   body {
@@ -407,6 +407,9 @@ label #checkbtn-close {
   body {
     padding: 0;
     background: #fff;
+    scroll-behavior: smooth;
+    scroll-behavior: auto;
+  }
   }
   .wrapper {
     background-color: none;
@@ -482,9 +485,11 @@ label #checkbtn-close {
   }
   #Articles {
     padding: 1em;
+    margin-bottom: 2em;
   }
   #About-section {
     padding: 1em;
+    margin-bottom: 2em;
   }
   .About {
     display: flex;
@@ -498,14 +503,17 @@ label #checkbtn-close {
   }
   #contact-section {
     padding: 1em;
+    margin-bottom: 2em;
   }
   .contact-form {
     display: flex;
     flex-direction: column;
   }
-.footer {
-  background: lightgray;
-}
+  .footer {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background: lightgray;
+  }
   .footer-copy p {
     margin-bottom: 1.5em;
   }
@@ -518,7 +526,7 @@ label #checkbtn-close {
 }
 
 /* mobile screen size */
-@media screen and (max-width: 500px ) {
+@media screen and (max-width: 500px) {
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 3em;
@@ -526,6 +534,9 @@ label #checkbtn-close {
   body {
     padding: 0;
     background: #fff;
+    scroll-behavior: smooth;
+    scroll-behavior: auto;
+  }
   }
   .wrapper {
     background-color: none;
@@ -571,7 +582,6 @@ label #checkbtn-close {
     background: lightgray;
     top: 60px;
     right: -100%;
-    /* text-align: left; */
     transition: all 0.5s;
     z-index: 2;
   }
@@ -636,7 +646,9 @@ label #checkbtn-close {
   .hero-img {
     display: none;
   }
-
+  #Article {
+    margin-bottom: 2em;
+  }
   #Articles h1 {
     font-size: 40px;
     max-width: 4.4em;
@@ -663,8 +675,13 @@ label #checkbtn-close {
     flex-direction: column;
   }
   .footer {
-    padding-top: .2em;
-    padding-left: 1em;
+    width: 100%;
+    height: 75vh;
+    background-color: #f1f0f0;
+    background-position: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     padding-right: 1em;
+    padding-left: 1em;
   }
 }
