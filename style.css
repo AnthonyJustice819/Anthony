@@ -407,9 +407,6 @@ label #checkbtn-close {
   body {
     padding: 0;
     background: #fff;
-    scroll-behavior: smooth;
-    scroll-behavior: auto;
-  }
   }
   .wrapper {
     background-color: none;
@@ -534,9 +531,6 @@ label #checkbtn-close {
   body {
     padding: 0;
     background: #fff;
-    scroll-behavior: smooth;
-    scroll-behavior: auto;
-  }
   }
   .wrapper {
     background-color: none;
