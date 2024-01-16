@@ -364,6 +364,9 @@ label #checkbtn-close {
     justify-content: space-between;
     line-height: 1.5em;
   }
+  .hero-img {
+    height: 12rem;
+  }
   .project {
     display: none;
   }
@@ -597,7 +600,6 @@ label #checkbtn-close {
   }
   #check:checked ~ .header-link {
     right: -70%;
-  
   }
   #check:checked ~ label #checkbtn {
     display: none;
@@ -606,7 +608,7 @@ label #checkbtn-close {
     margin-right: 1em;
     margin-top: 15px;
     line-height: 80px;
-    display: block; 
+    display: block;
   }
 
   #Home {
